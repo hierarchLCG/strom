@@ -8,7 +8,8 @@
 <button onclick="save()">插入用户</button>
 <script type="text/javascript">
 	function save(){
-		window.location= "${pageContext.request.contextPath}/user/insert";//请求的网址
+		this.location.href="/test/test";
+		
 	}
 </script>
 </body>

@@ -19,4 +19,20 @@
  	<select id="queryId" resultType="Integer">
  		select id from user order by id desc limit 1;
  	</select>
+ 	<select id="export">
+ 		SELECT 
+		  table_name tables,
+		  COLUMN_NAME cname,  
+		  COLUMN_TYPE type,  
+		    DATA_TYPE dtype,  
+		  CHARACTER_MAXIMUM_LENGTH length,  
+		  IS_NULLABLE isnull,  
+		  COLUMN_DEFAULT def,  
+		  COLUMN_COMMENT comment  
+			FROM  
+		 INFORMATION_SCHEMA.COLUMNS  
+		where  
+		table_schema ='yihua'  
+ 
+ 	</select>
 </mapper>
